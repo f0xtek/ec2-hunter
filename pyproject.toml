@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "ec2-hunter"
+version = "0.1.0"
+description = "Find all EC2 instances in AWS accounts defined in your AWS CLI profiles."
+authors = ["Luke Anderson <landers4@jaguarlandrover.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+boto3 = "^1.17.68"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+autopep8 = "^1.5.7"
+pylint = "^2.8.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
